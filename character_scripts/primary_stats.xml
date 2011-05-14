@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+  <PrimaryCharacterStatistic>
+    <short_name>ST</short_name>
+    <long_name>strength</long_name>
+    <description>
+      You know, muscle. Boom! Boom! Fiah Powah. Note that physical size and
+      fitness play a role in many "strength" related tasks; in particular, ST
+      is "short term power", for any long term activity Fitness will have to be
+      taken into account.
+    </description>
+  </PrimaryCharacterStatistic>
+  <PrimaryCharacterStatistic>
+    <short_name>FT</short_name>
+    <long_name>fitness</long_name>
+    <description>
+      Fitness is usually called Constitution, Health, or Endurance. I made a
+      distinction here because I wanted to emphasis the difference between
+      "strong" (high ST) and "athletic" (high FT). Fitness, along with
+      Willpower determines your resistance to various physical challenges. Raw
+      size also plays a role in how much "damage" you can absorb.
+    </description>
+  </PrimaryCharacterStatistic>
+  <PrimaryCharacterStatistic>
+    <short_name>CO</short_name>
+    <long_name>coordination</long_name>
+    <description>
+      Coordination is the primary stat for physical skills, it represents "slow
+      and deliberate" actions and as such is analogous to FT as RF is to
+      strength.
+    </description>
+  </PrimaryCharacterStatistic>
+  <PrimaryCharacterStatistic>
+    <short_name>RX</short_name>
+    <long_name>reflexes</long_name>
+    <description>
+      Reflexes determine a characters "fast" reaction speed, it affects
+      physical skills and tasks where speed is of the essence.
+    </description>
+  </PrimaryCharacterStatistic>
+  <PrimaryCharacterStatistic>
+    <short_name>PE</short_name>
+    <long_name>perception</long_name>
+    <description>
+      Perception, of course, has a physical as well as mental component. The
+      stat here represents not just observing your surroundings, but making
+      correct conclusions base on them. It might also be termed "instinctual
+      intelligence", as compared to Reason.
+    </description>
+  </PrimaryCharacterStatistic>
+  <PrimaryCharacterStatistic>
+    <short_name>RE</short_name>
+    <long_name>reason</long_name>
+    <description>
+      Reason is the higher order brain stat. It is the primary governing stat
+      of "book learning" skills; such that you might learn at school. It also
+      helps in puzzle solving and designing or utilizing novel tools or
+      gadgets.
+    </description>
+  </PrimaryCharacterStatistic>
+  <PrimaryCharacterStatistic>
+    <short_name>CH</short_name>
+    <long_name>charisma</long_name>
+    <description>
+      Charisma is the how you win friends and influence people. It is the
+      primary determinant for raw reaction rolls and most social and leadership
+      skills. It is not how good looking you are (there are traits for that),
+      but can substitute in some instances.
+    </description>
+  </PrimaryCharacterStatistic>
+  <PrimaryCharacterStatistic>
+    <short_name>WL</short_name>
+    <long_name>willpower</long_name>
+    <description>
+      Willpower is in someways the mental analogy of Fitness. It plays a strong
+      role in survival of some types of hazards as well as determining, in
+      part, the characters' learning rate. A high WL low FT character is going
+      to get himself in a lot of trouble, because he will push his body to the
+      breaking point and past it.
+    </description>
+  </PrimaryCharacterStatistic>
+</list>

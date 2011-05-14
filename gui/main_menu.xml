@@ -1,0 +1,36 @@
+<VBox name="MainMenuMenu" background_image="gui/notebook/notebook_background.png" padding="0" position_technique="center:center" opaque="0" min_size="780,545" max_size="780,545">
+  <HBox vexpand="1" padding="0" opaque="0">
+    <VBox min_size="20,0" padding="0" opaque="0">
+      <Spacer fixed_size="50"></Spacer>
+      <VBox name="leftTabs" min_size="20,0" padding="0" opaque="0"></VBox>
+      <Spacer fixed_size="40"></Spacer>
+    </VBox>
+    <VBox padding="0" opaque="0">
+      <HBox name="topTabs" min_size="0,30" opaque="0"></HBox>
+      <HBox vexpand="1" opaque="0">
+        <Spacer fixed_size="32" />
+		<!-- by adding hexpand, buttons get resized to size of hbox (which is what I want) but I don't know why)-->
+        <VBox name="leftPage" hexpand="1" max_size="312,474" min_size="312,474" padding="8" opaque="0">
+          <Spacer fixed_size="32"/>
+          <Button base_color="0,0,0,0" name="newButton" text="New Game" font="OldTypewriter"/>
+          <Button base_color="0,0,0,0" name="loadButton" text="Load Game" font="OldTypewriter"/>
+          <Button base_color="0,0,0,0" name="settingsButton" text="Settings" font="OldTypewriter"/>
+          <Button base_color="0,0,0,0" name="creditsButton" text="Credits" font="OldTypewriter"/>
+		</VBox>
+        <Spacer fixed_size="20" />
+        <VBox name="rightPages" padding="8" opaque="0" position_technique="center:center"></VBox>
+      </HBox>
+      <HBox name="bottomTabs" min_size="0,30" opaque="0">
+	  <!-- the tabl below is supposed to be at bottom left.. for now? -->
+      <Spacer fixed_size="32"/>
+	  <ImageButton max_size="99,24" text="Quit" name="quitButton" font="OldTypewriter" up_image="gui/notebook/tabs/tab2_bg_dark_bottom.png" hover_image="gui/notebook/tabs/tab2_bg_normal_bottom.png" down_image="gui/notebook/tabs/tab2_bg_normal_bottom.png" />
+	  </HBox>
+    </VBox>
+    <VBox min_size="20,0" padding="0" opaque="0">
+      <Spacer fixed_size="50"></Spacer>
+      <VBox name="rightTabs" min_size="20,0" opaque="0"></VBox>
+      <Spacer fixed_size="40"></Spacer>
+    </VBox>
+    <Spacer fixed_size="4"></Spacer>
+  </HBox>
+</VBox>

@@ -1,0 +1,25 @@
+<VBox background_image="gui/notebook/notebook_background.png" opaque="0"
+      min_size="780,545" max_size="780,545">
+  <HBox vexpand="1" padding="0" opaque="0">
+    <VBox min_size="20,0" padding="0" opaque="0">
+      <Spacer fixed_size="50"></Spacer>
+      <VBox name="leftTabs" min_size="20,0" padding="0" opaque="0"></VBox>
+      <Spacer fixed_size="40"></Spacer>
+    </VBox>
+    <VBox hexpand="1" padding="0" opaque="0">
+      <HBox name="topTabs" min_size="0,30" opaque="0"></HBox>
+      <HBox vexpand="1" opaque="0">
+        <VBox name="leftPage" hexpand="73" opaque="0"></VBox>
+        <Spacer fixed_size="10"></Spacer>
+        <VBox name="rightPages" hexpand="100" opaque="0"></VBox>
+      </HBox>
+      <HBox name="bottomTabs" min_size="0,30" opaque="0"></HBox>
+    </VBox>
+    <VBox min_size="20,0" padding="0" opaque="0">
+      <Spacer fixed_size="50"></Spacer>
+      <VBox name="rightTabs" min_size="20,0" opaque="0"></VBox>
+      <Spacer fixed_size="40"></Spacer>
+    </VBox>
+    <Spacer fixed_size="4"></Spacer>
+  </HBox>
+</VBox>

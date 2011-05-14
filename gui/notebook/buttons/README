@@ -1,0 +1,4 @@
+Hello dear reader!
+In this directory are some buttons. Ultimately all buttons should be moved from other places and be kept here. 
+But, for now, there are two button backgrounds here - one is 70x30 pix, other is 135x30 pix (files itself are a little bit bigger due to irregular borders), both available in normal and dark flavors. Those are made by Q_x and licensed accordingly to latest PARPG licensing scheme.
+I added something for qubodup. 16x16 button is one thing - rules apply as above. Plus, extra button_flex_16* files is flexible-width button with left and right border elements and miggle part tileable horizontally.

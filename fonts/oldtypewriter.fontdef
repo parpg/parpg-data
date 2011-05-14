@@ -1,0 +1,31 @@
+[Font/OldTypewriter]
+
+type: truetype
+source: fonts/oldtypewriter.ttf
+size: 12
+antialias: 1
+color: 0,0,0
+
+[Font/OldTypewriter_8]
+
+type: truetype
+source: fonts/oldtypewriter.ttf
+size: 8
+antialias: 1
+color: 0,0,0
+
+[Font/OldTypewriter_9]
+
+type: truetype
+source: fonts/oldtypewriter.ttf
+size: 9
+antialias: 1
+color: 0,0,0
+
+[Font/OldTypewriter_10]
+
+type: truetype
+source: fonts/oldtypewriter.ttf
+size: 10
+antialias: 1
+color: 0,0,0

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+  <SecondaryCharacterStatistic>
+    <name>carrying capacity</name>
+    <description>
+      Maximum weight you can carry without being overburdened.
+    </description>
+    <unit>kg</unit>
+    <mean type="float">20.0</mean>
+    <sd type="float">10.0</sd>
+    <minimum type="float">5.0</minimum>
+    <maximum type="float">60.0</maximum>
+    <stat_modifiers>
+      <strength type="float">0.70</strength>
+      <fitness type="float">0.30</fitness>
+    </stat_modifiers>
+  </SecondaryCharacterStatistic>
+  <SecondaryCharacterStatistic>
+    <name>melee damage</name>
+    <description>
+      Maximum weight you can carry without being overburdened.
+    </description>
+    <unit>hp</unit>
+    <mean type="float">10.0</mean>
+    <sd type="float">4.0</sd>
+    <stat_modifiers>
+      <strength type="float">0.70</strength>
+      <coordination type="float">0.30</coordination>
+    </stat_modifiers>
+  </SecondaryCharacterStatistic>
+  <SecondaryCharacterStatistic>
+    <name>sprint speed</name>
+    <description>
+      Maximum weight you can carry without being overburdened.
+    </description>
+    <unit>m/s</unit>
+    <mean type="float">7.0</mean>
+    <sd type="float">0.5</sd>
+    <minimum type="float">0.0</minimum>
+    <stat_modifiers>
+      <fitness type="float">0.70</fitness>
+      <strength type="float">0.30</strength>
+    </stat_modifiers>
+  </SecondaryCharacterStatistic>
+  <SecondaryCharacterStatistic name="run speed" unit="m/s" mean="5.0" sd="0.5"
+                      minimum="0.0">
+    <name>run speed</name>
+    <description>
+      Maximum weight you can carry without being overburdened.
+    </description>
+    <unit>m/s</unit>
+    <mean type="float">5.0</mean>
+    <sd type="float">0.5</sd>
+    <minimum type="float">0.0</minimum>
+    <stat_modifiers>
+      <fitness type="float">1.00</fitness>
+    </stat_modifiers>
+  </SecondaryCharacterStatistic>
+  <SecondaryCharacterStatistic>
+    <name>aim</name>
+    <description>
+      Maximum variation in aim measured in degrees off center. The larger this
+      number, the more scattered your shots will be and consequently the less
+      likely you will be to hit something other than your own foot!
+    </description>
+    <unit>degree</unit>
+    <mean type="float">0.01</mean>
+    <sd type="float">0.01</sd>
+    <minimum type="float">0.00</minimum>
+    <maximum type="float">90.00</maximum>
+    <stat_modifiers>
+      <coordination type="float">0.70</coordination>
+      <perception type="float">0.30</perception>
+    </stat_modifiers>
+  </SecondaryCharacterStatistic>
+</list>

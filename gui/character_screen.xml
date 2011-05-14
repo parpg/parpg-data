@@ -1,0 +1,186 @@
+<VBox name="CharacterScreen"
+      background_image="gui/notebook/notebook_background.png" opaque="0"
+      min_size="800,600" max_size="800,600"
+      position_technique="center:center">
+  <HBox vexpand="1" min_size="800,560" max_size="800,560" padding="0" opaque="0">
+    <VBox min_size="22,0" max_size="22,9999" padding="0" opaque="0">
+      <Spacer fixed_size="50"/>
+      <VBox name="leftTabs" min_size="22,0" max_size="22,9999"
+            padding="0" opaque="0"></VBox>
+      <Spacer fixed_size="40"/>
+    </VBox>
+    <VBox hexpand="1" min_size="734,560" max_size="734,560" padding="0"
+          opaque="0">
+      <HBox name="topTabs" min_size="0,28" max_size="0,28"
+            opaque="0">
+      </HBox>
+      <HBox min_size="732,517" max_size="732,517" opaque="0">
+        <VBox name="leftPage" max_size="358,9999" min_size="358,0"
+              margins="5,5" opaque="0">
+          <Spacer fixed_size="15"/>
+          <HBox opaque="0">
+            <Spacer fixed_size="20"/>
+            <Icon name="portrait" image="gui/portraits/camilla.png"
+                  max_size="100,123"/>
+            <VBox hexpand="1" min_size="110,0" padding="1" opaque="0">
+              <TextField name="characterName" text="Name"
+                         font="OldTypewriter" background_color="255,255,255"/>
+              <HBox opaque="0" padding="0">
+                <Spacer/>
+                <Label text="Age" font="OldTypewriter_10"/>
+                <Spacer/>
+              </HBox>
+              <HBox opaque="0">
+                <Spacer/>
+                <IntSpinner name="age" lower_limit="18" upper_limit="60"
+                            font="OldTypewriter_8" background_color="0,0,0,0"
+                            min_size="100,12" max_size="100,12"/>
+                <Spacer/>
+              </HBox>
+              <HBox opaque="0" padding="0">
+                <Spacer/>
+                <Label text="Sex" font="OldTypewriter_10"/>
+                <Spacer/>
+              </HBox>
+              <HBox opaque="0">
+                <Spacer/>
+                <Spinner name="sex" items="Male,Female"
+                         font="OldTypewriter_8" background_color="0,0,0,0"
+                         min_size="100,12" max_size="100,12"/>
+                <Spacer/>
+              </HBox>
+              <HBox opaque="0" padding="0">
+                <Spacer/>
+                <Label text="Origin" font="OldTypewriter_10"/>
+                <Spacer/>
+              </HBox>
+              <HBox opaque="0">
+                <Spacer/>
+                <Spinner name="origin" items="Oldster,Young Blood"
+                         font="OldTypewriter_8" background_color="0,0,0,0"
+                         min_size="100,12" max_size="100,12"/>
+                <Spacer/>
+              </HBox>
+              <HBox opaque="0" padding="0">
+                <Spacer/>
+                <Label text="Portrait" font="OldTypewriter_10"/>
+                <Spacer/>
+              </HBox>
+              <HBox opaque="0">
+                <Spacer/>
+                <Spinner name="portrait" items=""
+                         font="OldTypewriter_10" background_color="0,0,0,0"
+                         min_size="100,12" max_size="100,12"/>
+                <Spacer/>
+              </HBox>
+            </VBox>
+            <Icon name="model" image="gui/character_model.png"
+                  max_size="100,123"/>
+          </HBox>
+          <Spacer fixed_size="20"/>
+          <HBox opaque="0">
+            <Spacer fixed_size="6"/>
+            <VBox min_size="200,0" max_size="200,9999" opaque="0">
+              <HBox padding="0" opaque="0">
+                <Label text="Primary Stats" font="OldTypewriter"/>
+                <Label name="statisticsPoints" text="(0)"
+                       font="OldTypewriter"/>
+              </HBox>
+              <VBox name="primaryStatisticsList" hexpand="1"
+                    opaque="0">
+              </VBox>
+            </VBox>
+            <VBox hexpand="1" opaque="0">
+              <HBox padding="0" opaque="0">
+                <Label text="Traits" font="OldTypewriter"/>
+                <Label name="traitsPoints" text="(0)" font="OldTypewriter"/>
+                <Spacer/>
+              </HBox>
+              <ScrollArea>
+                <VBox name="traitsList" opaque="0">
+                </VBox>
+              </ScrollArea>
+            </VBox>
+          </HBox>
+          <Spacer/>
+          <ScrollArea min_size="0,100" max_size="999,300"
+                      background_color="0,0,0,0">
+            <TextField name="messageArea" base_color="0,0,0,0"
+                       background_color="0,0,0,0" font="OldTypewriter"/>
+          </ScrollArea>
+        </VBox>
+        <Spacer fixed_size="14"/>
+        <VBox name="rightPages" min_size="360,0" max_size="360,9999"
+              margins="10,20" hexpand="1" opaque="0">
+          <TabWidget min_size="325,300" max_size="350,300" opaque="0"
+                     border_size="1">
+            <VBox name="Secondary Stats" opaque="0"/>
+            <VBox name="Skills" opaque="0"/>
+          </TabWidget>
+          <Spacer fixed_size="25"/>
+          <HBox opaque="0">
+            <Spacer fixed_size="14"/>
+            <InventoryGrid name="inventory" grid_size="6,2"/>
+          </HBox>
+          <HBox opaque="0">
+            <Spacer/>
+            <VBox opaque="0" margins="1,1" min_size="100,50" max_size="100,50">
+              <PercentageBar name="weightBar" value="25" border_size="1"
+                             foreground_color="50,50,50" min_size="80,20"
+                             max_size="80,20"/>
+              <HBox opaque="0">
+                <Spacer/>
+                <Label text="weight:" font="OldTypewriter_8"/>
+                <Label name="weightPoints" text="50/200" font="OldTypewriter_8"/>
+                <Spacer/>
+              </HBox>
+            </VBox>
+            <Spacer fixed_size="10"/>
+            <VBox opaque="0" margins="1,1" min_size="100,50" max_size="100,50">
+              <PercentageBar name="bulkBar" value="52" border_size="1"
+                             foreground_color="50,50,50" min_size="80,20"
+                             max_size="80,20"/>
+              <HBox opaque="0">
+                <Spacer/>
+                <Label text="bulk:" font="OldTypewriter_8"/>
+                <Label name="bulkPoints" text="78/150" font="OldTypewriter_8"/>
+                <Spacer/>
+              </HBox>
+            </VBox>
+            <Spacer/>
+          </HBox>
+        </VBox>
+      </HBox>
+      <HBox name="bottomTabs" min_size="0,24" max_size="9999,24" opaque="0">
+        <Spacer fixed_size="70"/>
+        <ImageButton name="cancelButton" text="Cancel" font="OldTypewriter_10"
+                     min_size="101,0" max_size="101,9999"
+                     up_image="gui/notebook/tabs/tab3_bg_normal_bottom.png"
+                     hover_image="gui/notebook/tabs/tab3_bg_normal_bottom.png"
+                     down_image="gui/notebook/tabs/tab3_bg_dark_bottom.png"/>
+        <Spacer fixed_size="100"/>
+        <ImageButton name="clearButton" text="Clear" font="OldTypewriter_10"
+                     min_size="52,0" max_size="52,9999"
+                     up_image="gui/notebook/tabs/tab5_bg_normal_bottom.png"
+                     hover_image="gui/notebook/tabs/tab5_bg_normal_bottom.png"
+                     down_image="gui/notebook/tabs/tab5_bg_dark_bottom.png"/>
+        <Spacer fixed_size="225"/>
+        <ImageButton name="startButton" text="Start Game" font="OldTypewriter_10"
+                     min_size="101,0" max_size="101,9999"
+                     up_image="gui/notebook/tabs/tab2_bg_normal_bottom.png"
+                     hover_image="gui/notebook/tabs/tab2_bg_normal_bottom.png"
+                     down_image="gui/notebook/tabs/tab2_bg_dark_bottom.png"/>
+      </HBox>
+    </VBox>
+    <VBox min_size="22,0" max_size="22,9999" padding="0" opaque="0">
+      <Spacer fixed_size="50"/>
+      <VBox name="rightTabs" min_size="22,0" max_size="22,9999"
+            opaque="0">
+      </VBox>
+      <Spacer fixed_size="40"/>
+    </VBox>
+    <Spacer fixed_size="4"/>
+  </HBox>
+  <HBox name="bottomBar" vexpand="1" opaque="0">
+  </HBox>
+</VBox>
