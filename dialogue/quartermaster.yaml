@@ -14,7 +14,7 @@
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
 ---
 NPC_NAME: Helja
-AVATAR_PATH: gui/portraits/quartermaster.jpg
+AVATAR_PATH: gui/portraits/quartermaster.png
 DEFAULT_GREETING:
     ID: main_dialog
     SAY: "Hello, there!  A new addition to the labor pool, I see."
