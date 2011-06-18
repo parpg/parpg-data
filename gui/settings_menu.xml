@@ -14,6 +14,11 @@
 	</HBox>
 	<CheckBox name="enable_fullscreen" text="Use the full screen mode" />
 	<CheckBox name="enable_sound" text="Enable sound" />
+        <HBox>
+              <Label hexpand="0" text="Scroll Speed:"/>
+              <Label name="scroll_speed_value"/>
+        </HBox>
+        <Slider name="scroll_speed" scale_start="1.0" scale_end="5.0"/>
 	<HBox>
 		<Spacer />
 		<Button name="cancelButton" text="Cancel" />
