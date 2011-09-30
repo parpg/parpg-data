@@ -14,154 +14,182 @@
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
 ---
 Footlocker:
-  name: Footlocker
-  text: Just a normal footlocker used to store items.
-  gfx: lock_box_metal01
+  description:
+    real_name: Footlocker
+    desc: Just a normal footlocker used to store items.
+  graphics:
+    gfx: lock_box_metal01
 ---
 WoodenCrate:
-  name: Wooden Crate
-  text: A battered crate
-  gfx: crate
+  description:
+    real_name: Wooden Crate
+    desc: A battered crate
+  graphics:
+    gfx: crate
 ---
 ShantyDoor:
-  name: Shanty Door
-  text: Looks like the entrance to the building.
-  gfx: shanty-door
----
-Dagger:
-  name: Dagger
+  description:
+    real_name: Shanty Door
+    desc: Looks like the entrance to the building.
+  graphics:
+    gfx: shanty-door
 ---
 Pamphlet:
-  name: Pamphlet
-  image: /gui/inv_images/inv_pamphlet.png
-  actions:
-    Read:
-      text: Brew Your Own Beer. Beer in 4 easy steps. You think with this information you are able to brew your own beer easily.
-      commands:
-        - {Command: SetQuestVariable, ID: beer, Variable: beer_instructions, Value: Read}
+  description:
+    real_name: Pamphlet
+  containable:
+    image: /gui/inv_images/inv_pamphlet.png
+  usable:
+    actions:
+      Read:
+        text: Brew Your Own Beer. Beer in 4 easy steps. You think with this information you are able to brew your own beer easily.
+        commands:
+          - {Command: SetQuestVariable, ID: beer, Variable: beer_instructions, Value: Read}
 ---
 Box:
-  name: Box
-  image: /gui/inv_images/inv_giftbox.png
-  actions:
-    Look:
-      text: Jenna's gift box. She gave it to you so you would take it to Pete Niitty. The wrapping is some kind of colorful plastic paper and looks almost new. You wonder what could be inside.
-    Use:
-      text: Open
-      commands:
-        - {Command: ReplaceItem, ObjectType: Boots, ID: Boots}
-        - {Command: SetQuestVariable, ID: fedex, Variable: open_box, Value: 1}
+  description:
+    real_name: Box
+    desc: Jenna's gift box. She gave it to you so you would take it to Pete Niitty. The wrapping is some kind of colorful plastic paper and looks almost new. You wonder what could be inside.
+  containable:  
+    image: /gui/inv_images/inv_giftbox.png
+  usable:
+    actions:
+      Use:
+        text: Open
+        commands:
+          - {Command: ReplaceItem, ObjectType: Boots, ID: Boots}
+          - {Command: SetQuestVariable, ID: fedex, Variable: open_box, Value: 1}
 ---
 Boots:
-  name: Boots
-  image: /gui/inv_images/inv_boots.png
-  actions:
-    Look:
-      text: Old, worn pair of boots. Patched, but looks comfy.
+  description:
+    real_name: Boots
+    desc: Old, worn pair of boots. Patched, but looks comfy.
+  containable:
+    image: /gui/inv_images/inv_boots.png
 ---
 Yeast:
-  name: Yeast
-  image: /gui/inv_images/inv_yeast_bag.png
-  actions:
-    Look:
-      text: Small bag of instant dried yeast.
+  description:
+    real_name: Yeast
+    desc: Small bag of instant dried yeast.
+  containable:
+    image: /gui/inv_images/inv_yeast_bag.png
 ---
 Grain:
-  name: Grain
-  image: /gui/inv_images/inv_grain.png
-  gfx: grain
-  actions:
-    Look:
-      text: Some kind of grain, looks like its barley malt.
+  description:
+    real_name: Grain
+    desc: Some kind of grain, looks like its barley malt.
+  containable:
+    image: /gui/inv_images/inv_grain.png
+  graphics:
+    gfx: grain
 ---
 A pack of Instant Taters:
-  name: A pack of Instant Taters
-  image: /gui/inv_images/inv_instant_taters.png
-  actions:
-    Look:
-      text: A box of Instant Taters. Now With More Starch! There are five portion-sized bags inside, just add hot water.
+  description:  
+    real_name: A pack of Instant Taters
+    desc: A box of Instant Taters. Now With More Starch! There are five portion-sized bags inside, just add hot water.
+  containable:
+    image: /gui/inv_images/inv_instant_taters.png
 ---
 Wild potato:
-  name: Wild potato
-  image: /gui/inv_images/inv_potato.png   
-  gfx: potatoes 
-  actions:
-    Look:
-      text: Wild potato. Looks appetizing!
+  description:
+    real_name: Wild potato
+    desc: Wild potato. Looks appetizing!
+  containable:
+    image: /gui/inv_images/inv_potato.png   
+  graphics:
+    gfx: potatoes 
 ---
 Rotten yam:
-  name: Rotten yam
-  image: /gui/inv_images/inv_yam.png
-  gfx: rotten_yam
-  actions:
-    Look:
-      text: Yuck! Hard to believe its edible! And how did it get here? Or rather - how old is this?
+  description:
+    real_name: Rotten yam
+    desc: Yuck! Hard to believe its edible! And how did it get here? Or rather - how old is this?
+  containable:
+    image: /gui/inv_images/inv_yam.png
+    bulk: 1
+    weight: 1
+  graphics:
+    gfx: rotten_yam
 ---
 Pot:
-  name: Old pot
-  image: /gui/inv_images/inv_pot.png
-  attributes: [Container]
-  actions:
-    Look:
-      text: An old pre-war cooking pot. It is roughly 30 centimeters in diameter. There must have been a time when it was non-stick, but in places the coating has worn off and rust is creeping in. The handles and lid are metal and heat up along with the pot.
-    BrewBeer:
+  description:
+    real_name: Old pot
+    desc: An old pre-war cooking pot. It is roughly 30 centimeters in diameter. There must have been a time when it was non-stick, but in places the coating has worn off and rust is creeping in. The handles and lid are metal and heat up along with the pot.
+  containable:
+    image: /gui/inv_images/inv_pot.png
+  container:
+    max_bulk: 50 
+  usable:
+    actions:
+      BrewBeer:
 ---
 Butcher's hook:
-  name: Meat hook
-  image: /gui/inv_images/inv_meathook.png
-  actions:
-    Look:
-      text: A meat hook. The hook is attached to a rough handle - it shouldn't be too difficult to remove it, though.
+  description:
+    real_name: Meat hook
+    desc: A meat hook. The hook is attached to a rough handle - it shouldn't be too difficult to remove it, though.
+  containable:
+    image: /gui/inv_images/inv_meathook.png
 ---
 Empty beer bottle:
-  name: Empty beer bottle
-  image: /gui/inv_images/inv_beer_bottle_empty.png
-  gfx: bottle
-  actions:
-    Look:
-      text: This bottle has few cracks here and there, but it should keep your brew sealed and fresh.
+  description:
+    real_name: Empty beer bottle
+    desc: This bottle has few cracks here and there, but it should keep your brew sealed and fresh.
+  containable:
+    image: /gui/inv_images/inv_beer_bottle_empty.png
+  graphics:
+    gfx: bottle
 ---
 Beer:
-  name: Beer
-  image: /gui/inv_images/inv_beer_full.png
-  gfx: bottle
-  actions:
-    Look:
-      text: Oooh! So refreshing, so gooood!
+  description:
+    real_name: Beer
+    desc: Oooh! So refreshing, so gooood!
+  containable:
+    image: /gui/inv_images/inv_beer_full.png
+  graphics:
+    gfx: bottle
 ---
 Small pocket knife:
-  name: Small pocket knife
-  image: /gui/inv_images/inv_pocketknife.png
-  actions:
-    Look:
-      text: A small pocket knife, simple and neglected, with one crude blade only.
+  description:
+    real_name: Small pocket knife
+    desc: A small pocket knife, simple and neglected, with one crude blade only.
+  containable:
+    image: /gui/inv_images/inv_pocketknife.png
+  equipable:
+    possible_slots: ["l_arm", "r_arm"]
 ---
 Bag of grain:
-  name: Bag of grain
-  image: /gui/inv_images/inv_grain_bag.png
+  description:
+    real_name: Bag of grain
+  containable:
+    image: /gui/inv_images/inv_grain_bag.png
 ---
 Wood:
-  name: Wood
-  image: /gui/inv_images/inv_wood.png
-  gfx: wood
-  actions:
-    Look:
-      text: Few pieces of chopped wood. Dry enough to make a fire.
+  description:
+    real_name: Wood
+    desc: Few pieces of chopped wood. Dry enough to make a fire.
+  containable:
+    image: /gui/inv_images/inv_wood.png
+  graphics:
+    gfx: wood
 ---
 Pure water:
-  name: Pure water
-  image: /gui/inv_images/inv_water_pure.png
-  gfx: bottle
-  actions:
-    Look:
-      text: A bottle with crystal clear water. Good to drink, good to cook with, whatever you wish.
+  description:
+    real_name: Pure water
+    desc: A bottle with crystal clear water. Good to drink, good to cook with, whatever you wish.
+  containable:
+    image: /gui/inv_images/inv_water_pure.png
+  graphics:
+    gfx: bottle
 ---
 Questionable water:
-  name: Water
-  image: /gui/inv_images/inv_water_muddy.png
-  gfx: bottle
-  actions:
-    Look:
-      text: A bottle with muddy water inside. Will it make you sick? You don't know until you try it!
+  description:
+    real_name: Water
+    desc: A bottle with muddy water inside. Will it make you sick? You don't know until you try it!
+  containable:
+    image: /gui/inv_images/inv_water_muddy.png
+  graphics:
+    gfx: bottle
       
-              
+---
+Character:
+  container:
+    max_bulk: 100

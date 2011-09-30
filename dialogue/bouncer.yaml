@@ -45,11 +45,11 @@ DEFAULT_GREETING:
         GOTO: loose_women
         
     -   REPLY: "Why is Camilla such a bitch?"
-        CONDITION: "pc.met('camilla')"
+        CONDITION: "met('camilla')"
         GOTO: explain_camilla
         
     -   REPLY: "What is up with Synnove?"
-        CONDITION: "pc.met('synnove')"
+        CONDITION: "met('synnove')"
         GOTO: explain_synnove
         
     -   REPLY: "Your boss's booze monopoly is over!!"

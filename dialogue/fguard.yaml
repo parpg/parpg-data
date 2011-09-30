@@ -20,7 +20,7 @@ DEFAULT_GREETING:
     SAY: "Halt, identify yourself!"
     RESPONSES:
     -   REPLY: "Whoa, easy with that weapon, sister"
-        CONDITION: "not pc.met('janie')"
+        CONDITION: "not met('janie')"
         GOTO: first_impression
         
     -   REPLY: "I'm the beer savior, baby!"
@@ -28,7 +28,7 @@ DEFAULT_GREETING:
         GOTO: gratitude
         
     -   REPLY: "It's me - don't you remember?"
-        CONDITION: "pc.met('janie')"
+        CONDITION: "met('janie')"
         GOTO: old_pals
         
     -   REPLY: "Sorry, didn't mean to startle you. I'll just be moving along\
@@ -420,14 +420,14 @@ SECTIONS:
     SAY: "Give me that back!"
     RESPONSES:
     -   REPLY: "Here"
-        CONDITION: "pc.hasItem(\"Boots\")"
+        CONDITION: "pc_has(\"Boots\")"
         ACTIONS:
         -   restart_quest:
             - fedex
         GOTO: rewrap_box
         
     -   REPLY: "I seem to have... misplaced them..."
-        CONDITION: "not pc.hasItem(\"Boots\")"
+        CONDITION: "not pc_has(\"Boots\")"
         GOTO: lost_boots
         
 -   ID: lost_boots

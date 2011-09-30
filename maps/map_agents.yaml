@@ -14,29 +14,48 @@
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
 ---
 DirtyOldCrate:
-    ViewName: "A dirty old crate"
-    RealName: "A dirty old crate"
-    ObjectType: "WoodenCrate"
-    Text: "A crate that is covered in grime and dirt. There doesn't seem to be anything remarkable about it."
+    Template: "WoodenCrate"
+    Entity:
+        description:
+            view_name: "A dirty old crate"
+            real_name: "A dirty old crate"
+            desc: "A crate that is covered in grime and dirt. There doesn't seem to be anything remarkable about it."
+        container:
+            max_bulk: 200
     Position: [-2.0, -11.0]
     Rotation: 0
-    Items:
-    - {ID: "Dagger", object_type: "Dagger"}
+    Inventory:
+        Slots: 20
+        Items:
+            - {ID: "Small pocket knife", type: "Small pocket knife"}
 ---
 ToFarm:
-    ViewName: "To Farm"
-    RealName: "To Farm"
-    ObjectType: "ShantyDoor"
+    Template: "ShantyDoor"
+    Entity:
+        description:
+            view_name: "To Farm"
+            real_name: "To Farm"
+        change_map:
+            target_map: "Farm"
+            target_position: [-2.0, 5.0]
     Position: [-6.0, -13.0]
     Rotation: 0
-    TargetMap: "Farm"
-    TargetPosition: [-2.0, 5.0]
+    
 ---
 Footlocker:
-    ViewName: "Footlocker"
-    RealName: "Footlocker"
-    ObjectType: "Footlocker"
+    Template: "Footlocker"
+    Entity:
+        description:
+            view_name: "Footlocker"
+            real_name: "Footlocker"
+        container:
+            max_bulk: 150
+        lockable:
+            locked: False
+            closed: True
     Position: [-9.0, 0.0]
     Rotation: 255
-    Items:
-    - {ID: "Dagger", object_type: "Dagger"}
+    Inventory:
+        Slots: 20
+        Items:    
+            - {ID: "Small pocket knife", type: "Small pocket knife"}

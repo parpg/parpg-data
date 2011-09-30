@@ -144,31 +144,31 @@ SECTIONS:
         GOTO: explain_pekko
         
     -   REPLY: "Tell me about Jacob."
-        CONDITION: "pc.met('jacob')"
+        CONDITION: "met('jacob')"
         GOTO: explain_jacob
         
     -   REPLY: "Tell me about Janie."
-        CONDITION: "pc.met('janie')"
+        CONDITION: "met('janie')"
         GOTO: explain_janie
         
     -   REPLY: "Tell me about Bart."
-        CONDITION: "pc.met('bart')"
+        CONDITION: "met('bart')"
         GOTO: explain_bart
         
     -   REPLY: "Tell me about your mother,  Aino."
-        CONDITION: "pc.met('ma')"
+        CONDITION: "met('ma')"
         GOTO: explain_ma
         
     -   REPLY: "Tell me about Helja."
-        CONDITION: "pc.met('helja')"
+        CONDITION: "met('helja')"
         GOTO: explain_helja
         
     -   REPLY: "Tell me about Matti."
-        CONDITION: "pc.met('matti')"
+        CONDITION: "met('matti')"
         GOTO: explain_matti
         
     -   REPLY: "Tell me about Skwisgaar."
-        CONDITION: "pc.met('skwisgaar')"
+        CONDITION: "met('skwisgaar')"
         GOTO: explain_skwisgaar
         
     -   REPLY: "Anyone else I should know about?"

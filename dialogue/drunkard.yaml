@@ -20,20 +20,20 @@ DEFAULT_GREETING:
     SAY: "Hey there, back up... no need to gang up on a poor guy!"
     RESPONSES:
     -   REPLY: "Gang up?  There's only one of me!"
-        CONDITION: "not pc.met('bart')"
+        CONDITION: "not met('bart')"
         GOTO: first_impression
         
     -   REPLY: "Glad to see you're feeling better."
-        CONDITION: "pc.met('bart') and quest.hasFinishedQuest('beer')"
+        CONDITION: "met('bart') and quest.hasFinishedQuest('beer')"
         GOTO: gratitude
         
     -   REPLY: "Same old Bart,  I see."
-        CONDITION: "pc.met('bart') and not\
+        CONDITION: "met('bart') and not\
            \ quest['fedex'].isGoalValue('accused_of_murder')"
         GOTO: old_pals
         
     -   REPLY: "See you later, Killer."
-        CONDITION: "pc.met('bart') and\
+        CONDITION: "met('bart') and\
            \ quest['fedex'].isGoalValue('accused_of_murder')"
         GOTO: end
         

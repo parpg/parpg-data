@@ -20,11 +20,11 @@ DEFAULT_GREETING:
     SAY: "Hi there!  I don't recognize you.  Are you new here?"
     RESPONSES:
     -   REPLY: "Yes, I am new.  And who are you?"
-        CONDITION: "not pc.met('synnove')"
+        CONDITION: "not met('synnove')"
         GOTO: meeting
         
     -   REPLY: "You don't remember me?  We just talked!"
-        CONDITION: "pc.met('synnove')"
+        CONDITION: "met('synnove')"
         GOTO: future_meetings
         
     -   REPLY: "I'm looking for stuff to make beer with "

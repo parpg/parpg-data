@@ -14,10 +14,13 @@
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
 ---
 ToMall:
-    ViewName: "To Mall"
-    RealName: "To Mall"
-    ObjectType: "ShantyDoor"
+    Template: "ShantyDoor"
+    Entity:    
+        description:
+            view_name: "To Mall"
+            real_name: "To Mall"
+        change_map:
+            target_map: "Mall"
+            target_position: [-6.5, -12.0]
     Position: [-2.0, 6.0]
     Rotation: 0
-    TargetMap: "Mall"
-    TargetPosition: [-6.5, -12.0]

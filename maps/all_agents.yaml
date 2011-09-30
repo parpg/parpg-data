@@ -12,242 +12,385 @@
 
 #   You should have received a copy of the GNU General Public License
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
----            
+---
 PlayerCharacter:
-    ViewName: "Player Character"
-    RealName: "Player Character"
-    ObjectType: "PlayerCharacter"
-    ObjectModel: "player"
+    Template: Character
+    Entity:
+        description:
+            view_name: "Player Character"
+            real_name: "Player Character"
+            desc: "Its you. Who would've thought that?"
+        behaviour:
+            behaviour_type: "Player"
+        graphics:
+            gfx: "player"
     Map: "Mall"
     Position: [2.0, -8.0]
     Rotation: 0
+    Equipment:
+        r_arm: {ID: "Small pocket knife", type: "Small pocket knife"}
     Inventory:
-    - {ID: "Small pocket knife", type: "Small pocket knife", slot: "right_hand"}
-    - {ID: "Beer", type: "Beer"}
-    - {ID: "Pamphlet", type: "Pamphlet"}
-    - {ID: "Pot", type: "Pot"}
----            
+        Slots: 20
+        Items:        
+            - {ID: "Beer", type: "Beer"}
+            - {ID: "Pamphlet", type: "Pamphlet"}
+            - {ID: "Pot", type: "Pot"}
+---
 Old Man:
-    ViewName: "Old Man"
-    RealName: "Old Man"
-    ObjectType: "NonPlayerCharacter"
-    ObjectModel: "long_coat_male"
-    Text: "An old, frail-looking man."
+    Template: Character
+    Entity:    
+        description:
+            view_name: "Old Man"
+            real_name: "Old Man"
+            desc: "An old, frail-looking man."
+        behaviour:
+            behaviour_type: "NonPlayer"
+        graphics:        
+            gfx: "long_coat_male"
     Map: "Mall"
     Position: [10.0, 0.0]
     Rotation: 0
+    Inventory:
+        Slots: 20
 ---            
 Janie:
-    ViewName: "Janie"
-    RealName: "Janie"
-    ObjectType: "NonPlayerCharacter"
-    ObjectModel: "long_coat_female"
-    Text: "A woman wearing a large coat, and a big gun."
+    Template: Character
+    Entity:    
+        description:
+            view_name: "Janie"
+            real_name: "Janie"
+            desc: "A woman wearing a large coat, and a big gun."
+        behaviour:
+            behaviour_type: "NonPlayer"
+        graphics:        
+            gfx: "long_coat_female"
     Map: "Mall"
     Position: [-5.0, -3.0]
     Rotation: 0
     Inventory:
-    - {ID: "Box", type: "Box"}
+        Slots: 20
+        Items:
+            - {ID: "Box", type: "Box"}
 ---
 Bart The Drunkard:
-    ViewName: "Bart"
-    RealName: "Bart"
-    ObjectType: "NonPlayerCharacter"
-    ObjectModel: "long_coat_male"
-    Text: "A very drunk looking man."
+    Template: Character
+    Entity:
+        description:
+            view_name: "Bart"
+            real_name: "Bart"
+            desc: "A very drunk looking man."
+        behaviour:
+            behaviour_type: "NonPlayer"
+        graphics:
+            gfx: "long_coat_male"
     Map: "Mall"
     Position: [-5.0, -4.0]
     Rotation: 0
 ---
 Skwisgaar the Crazy Swede:
-    ViewName: "Skwisgaar"
-    RealName: "Skwisgaar"
-    ObjectType: "NonPlayerCharacter"
-    ObjectModel: "male_traveler_1"
-    Text: "A wild-eyed man with an axe."
+    Template: Character
+    Entity:
+        description:
+            view_name: "Skwisgaar"
+            real_name: "Skwisgaar"
+            desc: "A wild-eyed man with an axe."
+        behaviour:
+            behaviour_type: "NonPlayer"
+        graphics:
+            gfx: "male_traveler_1"
     Map: "Mall"
     Position: [-5.0, -6.0]
     Rotation: 0
     Inventory:
-    - {ID: "yeast", type: "Yeast"}
+        Slots: 20
+        Items:     
+            - {ID: "yeast", type: "Yeast"}
 ---
 Matti:
-    ViewName: "Matti"
-    RealName: "Matti"
-    ObjectType: "NonPlayerCharacter"
-    ObjectModel: "male_traveler_1"
-    Text: "A man shoveling snow into a hole."
+    Template: Character
+    Entity:
+        description:
+            view_name: "Matti"
+            real_name: "Matti"
+            desc: "A man shoveling snow into a hole."
+        behaviour:
+            behaviour_type: "NonPlayer"
+        graphics:
+            gfx: "male_traveler_1"
     Map: "Mall"
     Position: [-8.0, -6.0]
     Rotation: 0
+    Inventory:
+        Slots: 20
 ---
 Dig:
-    ViewName: "Dig"
-    RealName: "Dig"
-    ObjectType: "NonPlayerCharacter"
-    ObjectModel: "male_traveler_1"
-    Text: "A tough looking dude."
+    Template: Character
+    Entity:
+        description:
+            view_name: "Dig"
+            real_name: "Dig"
+            desc: "A tough looking dude."
+        behaviour:
+            behaviour_type: "NonPlayer"
+        graphics:
+            gfx: "male_traveler_1"
     Map: "Mall"
     Position: [2.0, -6.0] 
     Rotation: 0
+    Inventory:
+        Slots: 20
 ---
 Jacob:
-    ViewName: "Jacob"
-    RealName: "Jacob"
-    ObjectType: "NonPlayerCharacter"
-    ObjectModel: "long_coat_male"
-    Text: "A lean man with a sharp face and an appraising gaze."
+    Template: Character
+    Entity:
+        description:
+            view_name: "Jacob"
+            real_name: "Jacob"
+            desc: "A lean man with a sharp face and an appraising gaze."
+        behaviour:
+            behaviour_type: "NonPlayer"
+        graphics:
+            gfx: "long_coat_male"
     Map: "Mall"
     Position: [3.0, -6.0] 
     Rotation: 0
+    Inventory:
+        Slots: 20
 ---
 Kimmo Niitty:
-    ViewName: "Kimmo"
-    RealName: "Kimmo"
-    ObjectType: "NonPlayerCharacter"
-    ObjectModel: "male_traveler_1"
-    Text: "An older man who exudes confidence and ability."
+    Template: Character
+    Entity:
+        description:
+            view_name: "Kimmo"
+            real_name: "Kimmo"
+            desc: "An older man who exudes confidence and ability."
+        behaviour:
+            behaviour_type: "NonPlayer"
+        graphics:
+            gfx: "male_traveler_1"
     Map: "Mall"
     Position: [4.0, -6.0]
     Rotation: 0
+    Inventory:
+        Slots: 20
 ---
 Helja:
-    ViewName: "Helja"
-    RealName: "Helja"
-    ObjectType: "NonPlayerCharacter"
-    ObjectModel: "npc_woman"
-    Text: "A business-like woman, short and stout."
+    Template: Character
+    Entity:
+        description:
+            view_name: "Helja"
+            real_name: "Helja"
+            desc: "A business-like woman, short and stout."
+        behaviour:
+            behaviour_type: "NonPlayer"
+        graphics:
+            gfx: "npc_woman"
     Map: "Mall"
     Position: [5.0, -7.0]
     Rotation: 0
+    Inventory:
+        Slots: 20
 ---
 Ma Niitty:
-    ViewName: "Aino"
-    RealName: "Aino"
-    ObjectType: "NonPlayerCharacter"
-    ObjectModel: "npc_woman"
-    Text: "An ancient crone with a tight lipped smile.  She has an unlit cigarette dangling from her lips."
+    Template: Character
+    Entity:    
+        description:
+            view_name: "Aino"
+            real_name: "Aino"
+            desc: "An ancient crone with a tight lipped smile.  She has an unlit cigarette dangling from her lips."
+        behaviour:
+            behaviour_type: "NonPlayer"
+        graphics:
+            gfx: "npc_woman"
     Map: "Mall"
     Position: [-6.0, -7.0]
     Rotation: 0
+    Inventory:
+        Slots: 20
 ---
 Kandi:
-    ViewName: "Kandi"
-    RealName: "Kandi"
-    ObjectType: "NonPlayerCharacter"
-    ObjectModel: "npc_woman"
-    Text: "A dark haired, scantily clad woman giving you the once over."
+    Template: Character
+    Entity:
+        description:
+            view_name: "Kandi"
+            real_name: "Kandi"
+            desc: "A dark haired, scantily clad woman giving you the once over."
+        behaviour:
+            behaviour_type: "NonPlayer"
+        graphics:
+            gfx: "npc_woman"
     Map: "Mall"
     Position: [-7.0, -7.0]
     Rotation: 0
+    Inventory:
+        Slots: 20
 ---
 Cali:
-    ViewName: "Cali"
-    RealName: "Cali"
-    ObjectType: "NonPlayerCharacter"
-    ObjectModel: "npc_woman"
-    Text: "A scantily clad blond, checking you out."
+    Template: Character
+    Entity:
+        description:
+            view_name: "Cali"
+            real_name: "Cali"
+            desc: "A scantily clad blond, checking you out."
+        behaviour:
+            behaviour_type: "NonPlayer"
+        graphics:
+            gfx: "npc_woman"
     Map: "Mall"
     Position: [-8.0, -7.0]
     Rotation: 0
+    Inventory:
+        Slots: 20
 ---
 Camilla Niitty:
-    ViewName: "Camilla"
-    RealName: "Camilla Niitty"
-    ObjectType: "NonPlayerCharacter"
-    ObjectModel: "long_coat_female"
-    Text: "A hard-faced pretty young woman. She seems to be scowling."
+    Template: Character
+    Entity:
+        description:
+            view_name: "Camilla"
+            real_name: "Camilla Niitty"
+            desc: "A hard-faced pretty young woman. She seems to be scowling."
+        behaviour:
+            behaviour_type: "NonPlayer"
+        graphics:
+            gfx: "long_coat_female"
     Map: "Mall"
     Position: [-5.0, -7.0]
     Rotation: 0
+    Inventory:
+        Slots: 20
 ---
 Synnove Niitty:
-    ViewName: "Synnove"
-    RealName: "Synnove"
-    ObjectType: "NonPlayerCharacter"
-    ObjectModel: "long_coat_female"
-    Text: "A plain looking girl with a faraway look in her eye."
+    Template: Character
+    Entity:
+        description:
+            view_name: "Synnove"
+            real_name: "Synnove"
+            desc: "A plain looking girl with a faraway look in her eye."
+        behaviour:
+            behaviour_type: "NonPlayer"
+        graphics:
+            gfx: "long_coat_female"
     Map: "Mall"
     Position: [-5.0, -9.0]
     Rotation: 0
+    Inventory:
+        Slots: 20
 ---
 Farmer Manslow:
-    ViewName: "Manslow"
-    RealName: "Manslow"
-    ObjectType: "NonPlayerCharacter"
-    ObjectModel: "male_farmer_1"
-    Text: "A grimy looking farmer."
+    Template: Character
+    Entity:
+        description:
+            view_name: "Manslow"
+            real_name: "Manslow"
+            desc: "A grimy looking farmer."
+        behaviour:
+            behaviour_type: "NonPlayer"
+        graphics:
+            gfx: "male_farmer_1"
     Map: "Farm"
     Position: [-3.0, -3.0]
     Rotation: 0
     Inventory:
-        - {ID: bushel_of_grain, type: Grain}
----            
+        Slots: 20
+        Items:            
+            - {ID: bushel_of_grain, type: Grain}
+---
 Sami:
-    ViewName: "Sami"
-    RealName: "Sami"
-    ObjectType: "NonPlayerCharacter"
-    ObjectModel: "long_coat_male"
-    Text: "An earstwhile boy, working hard."
+    Template: Character
+    Entity:
+        description:
+            view_name: "Sami"
+            real_name: "Sami"
+            desc: "An earstwhile boy, working hard."
+        behaviour:
+            behaviour_type: "NonPlayer"
+        graphics:
+            gfx: "long_coat_male"
     Map: "Farm"
     Position: [3.0, 4.0]
     Rotation: 0
----            
+    Inventory:
+        Slots: 20
+---
 Rasmus:
-    ViewName: "Rasmus"
-    RealName: "Rasmus"
-    ObjectType: "NonPlayerCharacter"
-    ObjectModel: "long_coat_male"
-    Text: "A grimy looking farmer."
+    Template: Character
+    Entity:
+        description:
+            view_name: "Rasmus"
+            real_name: "Rasmus"
+            desc: "A grimy looking farmer."
+        behaviour:
+            behaviour_type: "NonPlayer"
+        graphics:
+            gfx: "long_coat_male"
     Map: "Farm"
     Position: [4.0, 3.0]
     Rotation: 0
+    Inventory:
+        Slots: 20
 ---
 Bottle:
-    ViewName: Bottle
-    ObjectType: "MapItem"
-    ItemType: "Empty beer bottle"
+    Template: "Empty beer bottle"
+    Entity:
+        description:
+           view_name: Bottle
     Map: "Mall"
     Position: [-5.0, -11.0]
     Rotation: 0
+    Inventory:
+        Slots: 20
 ---
 Potato:
-    ViewName: Wild potato
-    ObjectType: "MapItem"
-    ItemType: "Wild potato"
+    Template: "Wild potato"
+    Entity:
+        description:
+            view_name: Wild potato
     Map: "Farm"
     Position: [7.0, -16.0]
     Rotation: 0
+    Inventory:
+        Slots: 20
 ---
 Yam:
-    ViewName: Yam
-    ObjectType: "MapItem"
-    ItemType: "Rotten yam"
+    Template: "Rotten yam"
+    Entity:
+        description:
+            view_name: Yam
     Map: "Farm"
     Position: [-4.0, 0.0]
     Rotation: 0
+    Inventory:
+        Slots: 20
 ---
 Wood:
-    ViewName: Wood
-    ObjectType: "MapItem"
-    ItemType: "Wood"
+    Template: "Wood"
+    Entity:
+        description:
+            view_name: Wood
     Map: "Mall"
     Position: [10.0, 8.0]
     Rotation: 0
+    Inventory:
+        Slots: 20
 ---
 Questionable Water:
-    ViewName: Water
-    ObjectType: "MapItem"
-    ItemType: "Questionable water"
+    Template: "Questionable water"
+    Entity:
+        description:
+            view_name: Water
     Map: "Mall"
     Position: [9.0, -33.0]
     Rotation: 0
+    Inventory:
+        Slots: 20
 ---
 Pure Water:
-    ViewName: Water
-    ObjectType: "MapItem"
-    ItemType: "Pure water"
+    Template: "Pure water"
+    Entity:
+        description:
+            view_name: Water
     Map: "Mall"
     Position: [12.0, -42.0]
     Rotation: 0
-    
+    Inventory:
+        Slots: 20
