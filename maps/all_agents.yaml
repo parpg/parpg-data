@@ -24,6 +24,8 @@ PlayerCharacter:
             behaviour_type: "Player"
         graphics:
             gfx: "player"
+        characterstats:
+            gender: "Male"            
     Map: "Mall"
     Position: [2.0, -8.0]
     Rotation: 0
@@ -47,6 +49,8 @@ Old Man:
             behaviour_type: "NonPlayer"
         graphics:        
             gfx: "long_coat_male"
+        characterstats:
+            gender: "Male"            
     Map: "Mall"
     Position: [10.0, 0.0]
     Rotation: 0
@@ -64,6 +68,8 @@ Janie:
             behaviour_type: "NonPlayer"
         graphics:        
             gfx: "long_coat_female"
+        characterstats:
+            gender: "Female"            
     Map: "Mall"
     Position: [-5.0, -3.0]
     Rotation: 0
@@ -83,6 +89,8 @@ Bart The Drunkard:
             behaviour_type: "NonPlayer"
         graphics:
             gfx: "long_coat_male"
+        characterstats:
+            gender: "Male"            
     Map: "Mall"
     Position: [-5.0, -4.0]
     Rotation: 0
@@ -98,6 +106,8 @@ Skwisgaar the Crazy Swede:
             behaviour_type: "NonPlayer"
         graphics:
             gfx: "male_traveler_1"
+        characterstats:
+            gender: "Male"            
     Map: "Mall"
     Position: [-5.0, -6.0]
     Rotation: 0
@@ -117,6 +127,8 @@ Matti:
             behaviour_type: "NonPlayer"
         graphics:
             gfx: "male_traveler_1"
+        characterstats:
+            gender: "Male"            
     Map: "Mall"
     Position: [-8.0, -6.0]
     Rotation: 0
@@ -134,6 +146,8 @@ Dig:
             behaviour_type: "NonPlayer"
         graphics:
             gfx: "male_traveler_1"
+        characterstats:
+            gender: "Male"            
     Map: "Mall"
     Position: [2.0, -6.0] 
     Rotation: 0
@@ -151,6 +165,8 @@ Jacob:
             behaviour_type: "NonPlayer"
         graphics:
             gfx: "long_coat_male"
+        characterstats:
+            gender: "Male"            
     Map: "Mall"
     Position: [3.0, -6.0] 
     Rotation: 0
@@ -168,6 +184,8 @@ Kimmo Niitty:
             behaviour_type: "NonPlayer"
         graphics:
             gfx: "male_traveler_1"
+        characterstats:
+            gender: "Male"            
     Map: "Mall"
     Position: [4.0, -6.0]
     Rotation: 0
@@ -185,6 +203,8 @@ Helja:
             behaviour_type: "NonPlayer"
         graphics:
             gfx: "npc_woman"
+        characterstats:
+            gender: "Female"            
     Map: "Mall"
     Position: [5.0, -7.0]
     Rotation: 0
@@ -202,6 +222,8 @@ Ma Niitty:
             behaviour_type: "NonPlayer"
         graphics:
             gfx: "npc_woman"
+        characterstats:
+            gender: "Female"            
     Map: "Mall"
     Position: [-6.0, -7.0]
     Rotation: 0
@@ -219,6 +241,8 @@ Kandi:
             behaviour_type: "NonPlayer"
         graphics:
             gfx: "npc_woman"
+        characterstats:
+            gender: "Female"            
     Map: "Mall"
     Position: [-7.0, -7.0]
     Rotation: 0
@@ -236,6 +260,8 @@ Cali:
             behaviour_type: "NonPlayer"
         graphics:
             gfx: "npc_woman"
+        characterstats:
+            gender: "Female"            
     Map: "Mall"
     Position: [-8.0, -7.0]
     Rotation: 0
@@ -253,6 +279,8 @@ Camilla Niitty:
             behaviour_type: "NonPlayer"
         graphics:
             gfx: "long_coat_female"
+        characterstats:
+            gender: "Female"            
     Map: "Mall"
     Position: [-5.0, -7.0]
     Rotation: 0
@@ -270,6 +298,8 @@ Synnove Niitty:
             behaviour_type: "NonPlayer"
         graphics:
             gfx: "long_coat_female"
+        characterstats:
+            gender: "Female"            
     Map: "Mall"
     Position: [-5.0, -9.0]
     Rotation: 0
@@ -287,6 +317,8 @@ Farmer Manslow:
             behaviour_type: "NonPlayer"
         graphics:
             gfx: "male_farmer_1"
+        characterstats:
+            gender: "Male"            
     Map: "Farm"
     Position: [-3.0, -3.0]
     Rotation: 0
@@ -306,6 +338,8 @@ Sami:
             behaviour_type: "NonPlayer"
         graphics:
             gfx: "long_coat_male"
+        characterstats:
+            gender: "Male"            
     Map: "Farm"
     Position: [3.0, 4.0]
     Rotation: 0
@@ -323,6 +357,8 @@ Rasmus:
             behaviour_type: "NonPlayer"
         graphics:
             gfx: "long_coat_male"
+        characterstats:
+            gender: "Male"            
     Map: "Farm"
     Position: [4.0, 3.0]
     Rotation: 0
@@ -337,8 +373,6 @@ Bottle:
     Map: "Mall"
     Position: [-5.0, -11.0]
     Rotation: 0
-    Inventory:
-        Slots: 20
 ---
 Potato:
     Template: "Wild potato"
@@ -348,8 +382,6 @@ Potato:
     Map: "Farm"
     Position: [7.0, -16.0]
     Rotation: 0
-    Inventory:
-        Slots: 20
 ---
 Yam:
     Template: "Rotten yam"
@@ -359,8 +391,6 @@ Yam:
     Map: "Farm"
     Position: [-4.0, 0.0]
     Rotation: 0
-    Inventory:
-        Slots: 20
 ---
 Wood:
     Template: "Wood"
@@ -370,8 +400,6 @@ Wood:
     Map: "Mall"
     Position: [10.0, 8.0]
     Rotation: 0
-    Inventory:
-        Slots: 20
 ---
 Questionable Water:
     Template: "Questionable water"
@@ -381,8 +409,6 @@ Questionable Water:
     Map: "Mall"
     Position: [9.0, -33.0]
     Rotation: 0
-    Inventory:
-        Slots: 20
 ---
 Pure Water:
     Template: "Pure water"
@@ -392,5 +418,4 @@ Pure Water:
     Map: "Mall"
     Position: [12.0, -42.0]
     Rotation: 0
-    Inventory:
-        Slots: 20
+    
