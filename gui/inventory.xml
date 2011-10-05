@@ -28,12 +28,12 @@
           <Spacer fixed_size="20"></Spacer>
           <VBox padding="20" opaque="0">
             <Spacer fixed_size="40"></Spacer>
-            <EquipmentSlot name="shirtSlot" label_text="shirt">
+            <EquipmentSlot name="shirtSlot">
             </EquipmentSlot>
-            <EquipmentSlot name="rightHandSlot" label_text="rhand">
+            <EquipmentSlot name="rightHandSlot">
             </EquipmentSlot>
-            <EquipmentSlot name="beltSlot" label_text="belt"></EquipmentSlot>
-            <EquipmentSlot name="bootsSlot" label_text="boots"></EquipmentSlot>
+            <EquipmentSlot name="beltSlot"></EquipmentSlot>
+            <EquipmentSlot name="bootsSlot"></EquipmentSlot>
           </VBox>
           <HBox opaque="0" vexpand="1">
             <Spacer fixed_size="10"></Spacer>
@@ -41,10 +41,10 @@
             </Icon>
           </HBox>
           <VBox padding="20" opaque="0">
-            <EquipmentSlot name="headSlot" label_text="head"></EquipmentSlot>
-            <EquipmentSlot name="neckSlot" label_text="back"></EquipmentSlot>
-            <EquipmentSlot name="leftHandSlot" label_text="lhand"></EquipmentSlot>
-            <EquipmentSlot name="pantsSlot" label_text="pants"></EquipmentSlot>
+            <EquipmentSlot name="headSlot"></EquipmentSlot>
+            <EquipmentSlot name="neckSlot"></EquipmentSlot>
+            <EquipmentSlot name="leftHandSlot"></EquipmentSlot>
+            <EquipmentSlot name="pantsSlot"></EquipmentSlot>
           </VBox>
           <Spacer fixed_size="20"></Spacer>
         </HBox>
