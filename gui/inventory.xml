@@ -57,7 +57,7 @@
         <HBox min_size="0,120" opaque="0">
           <Label text="Item description here."></Label>
         </HBox>
-        <InventoryGrid grid_size="6,7"></InventoryGrid>
+        <InventoryGrid name="Grid" grid_size="6,7"></InventoryGrid>
       </VBox>
       <Spacer fixed_size="20"></Spacer>
     </VBox>
