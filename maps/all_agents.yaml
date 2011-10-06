@@ -32,7 +32,7 @@ PlayerCharacter:
     Equipment:
         r_arm: {ID: "Small pocket knife", type: "Small pocket knife"}
     Inventory:
-        Slots: 20
+        Slots: 42
         Items:        
             - {ID: "Beer", type: "Beer"}
             - {ID: "Pamphlet", type: "Pamphlet"}
