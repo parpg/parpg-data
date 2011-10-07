@@ -117,6 +117,7 @@ Pot:
   containable:
     image: /gui/inv_images/inv_pot.png
   container:
+    children: [null, null, null, null, null, null, null, null, null]
     max_bulk: 50 
   usable:
     actions:
