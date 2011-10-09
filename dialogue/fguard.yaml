@@ -276,6 +276,10 @@ SECTIONS:
        \ package, and gives them to you]"
     RESPONSES:
     -   REPLY: "Oh.  I must be missing something..."
+        ACTIONS:
+        -   replace_item:
+            - Box
+            - Boots
         GOTO: explain_boots
         
 -   ID: pekko_left
