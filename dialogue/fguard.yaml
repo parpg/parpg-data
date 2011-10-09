@@ -424,6 +424,9 @@ SECTIONS:
         ACTIONS:
         -   restart_quest:
             - fedex
+        -   replace_item:
+            - Boots
+            - Box
         GOTO: rewrap_box
         
     -   REPLY: "I seem to have... misplaced them..."
