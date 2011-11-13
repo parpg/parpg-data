@@ -20,7 +20,7 @@ DEFAULT_GREETING:
     SAY: "Halt, identify yourself!"
     RESPONSES:
     -   REPLY: "Whoa, easy with that weapon, sister"
-        CONDITION: "not met('janie')"
+        CONDITION: "not met(npc.general.identifier)"
         GOTO: first_impression
         
     -   REPLY: "I'm the beer savior, baby!"
@@ -28,7 +28,7 @@ DEFAULT_GREETING:
         GOTO: gratitude
         
     -   REPLY: "It's me - don't you remember?"
-        CONDITION: "met('janie')"
+        CONDITION: "met(npc.general.identifier)"
         GOTO: old_pals
         
     -   REPLY: "Sorry, didn't mean to startle you. I'll just be moving along\
@@ -41,7 +41,6 @@ SECTIONS:
        \ face..."
     ACTIONS:
     -   meet:
-        - janie
     RESPONSES:
     -   REPLY: "Yeah, just blew in with the last storm."
         CONDITION: "not quest.hasActiveQuest('fedex') and not\
