@@ -1,0 +1,5 @@
+Scripts:
+    janie_greet:
+        - [Talk, Janie, 0, approach, 'Janie.fifeagent, PlayerCharacter.fifeagent.behaviour.agent']
+Conditions:
+    - ["not met('Janie')", "janie_greet"]
