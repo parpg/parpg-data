@@ -1,5 +1,6 @@
-Scripts:
+Scripts:   
     janie_greet:
         - [Talk, Janie, 0, approach, 'Janie.fifeagent, PlayerCharacter.fifeagent.behaviour.agent']
+        - [SetScriptVariable, "'greeted_janie', True", 0]
 Conditions:
-    - ["not met('Janie')", "janie_greet"]
+    - ["not greeted_janie", "janie_greet"]
