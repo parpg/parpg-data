@@ -13,14 +13,13 @@
 #   You should have received a copy of the GNU General Public License
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
 ---
-NPC_NAME: Ma Niitty
+NPC_NAME: ma
 AVATAR_PATH: gui/portraits/ma.png
 DEFAULT_GREETING:
     ID: main_dialog
     SAY: "Why hello there... I don't recognize your face..."
     ACTIONS:
     -   meet:
-        - ma
     RESPONSES:
     -   REPLY: "I am trying to make beer, can you help me?"
         CONDITION: "quest.hasActiveQuest('beer') and not\

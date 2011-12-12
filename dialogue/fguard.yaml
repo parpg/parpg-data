@@ -13,7 +13,7 @@
 #   You should have received a copy of the GNU General Public License
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
 ---
-NPC_NAME: Janie
+NPC_NAME: fguard
 AVATAR_PATH: gui/portraits/fguard.png
 DEFAULT_GREETING:
     ID: main_dialog

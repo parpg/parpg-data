@@ -38,7 +38,7 @@ PlayerCharacter:
             - {ID: "Pamphlet", type: "Pamphlet"}
             - {ID: "Pot", type: "Pot"}
 ---
-Old Man:
+old_man:
     Template: Character
     Entity:    
         description:
@@ -57,7 +57,7 @@ Old Man:
     Inventory:
         Slots: 20
 ---            
-Janie:
+fguard:
     Template: Character
     Entity:    
         description:
@@ -78,11 +78,11 @@ Janie:
         Items:
             - {ID: "Box", type: "Box"}
 ---
-Bart The Drunkard:
+drunkard:
     Template: Character
     Entity:
         description:
-            view_name: "Bart"
+            view_name: "Bart The Drunkard"
             real_name: "Bart"
             desc: "A very drunk looking man."
         behaviour:
@@ -95,11 +95,11 @@ Bart The Drunkard:
     Position: [-5.0, -4.0]
     Rotation: 0
 ---
-Skwisgaar the Crazy Swede:
+crazy_swede:
     Template: Character
     Entity:
         description:
-            view_name: "Skwisgaar"
+            view_name: "Skwisgaar the Crazy Swede"
             real_name: "Skwisgaar"
             desc: "A wild-eyed man with an axe."
         behaviour:
@@ -116,7 +116,7 @@ Skwisgaar the Crazy Swede:
         Items:     
             - {ID: "yeast", type: "Yeast"}
 ---
-Matti:
+snowshoveler:
     Template: Character
     Entity:
         description:
@@ -135,7 +135,7 @@ Matti:
     Inventory:
         Slots: 20
 ---
-Dig:
+bouncer:
     Template: Character
     Entity:
         description:
@@ -154,7 +154,7 @@ Dig:
     Inventory:
         Slots: 20
 ---
-Jacob:
+innkeeper:
     Template: Character
     Entity:
         description:
@@ -173,11 +173,11 @@ Jacob:
     Inventory:
         Slots: 20
 ---
-Kimmo Niitty:
+leader:
     Template: Character
     Entity:
         description:
-            view_name: "Kimmo"
+            view_name: "Kimmo Niitty"
             real_name: "Kimmo"
             desc: "An older man who exudes confidence and ability."
         behaviour:
@@ -192,7 +192,7 @@ Kimmo Niitty:
     Inventory:
         Slots: 20
 ---
-Helja:
+quartermaster:
     Template: Character
     Entity:
         description:
@@ -211,7 +211,7 @@ Helja:
     Inventory:
         Slots: 20
 ---
-Ma Niitty:
+ma:
     Template: Character
     Entity:    
         description:
@@ -230,7 +230,7 @@ Ma Niitty:
     Inventory:
         Slots: 20
 ---
-Kandi:
+grifter2:
     Template: Character
     Entity:
         description:
@@ -249,7 +249,7 @@ Kandi:
     Inventory:
         Slots: 20
 ---
-Cali:
+grifter1:
     Template: Character
     Entity:
         description:
@@ -268,7 +268,7 @@ Cali:
     Inventory:
         Slots: 20
 ---
-Camilla Niitty:
+camilla:
     Template: Character
     Entity:
         description:
@@ -287,11 +287,11 @@ Camilla Niitty:
     Inventory:
         Slots: 20
 ---
-Synnove Niitty:
+synnove:
     Template: Character
     Entity:
         description:
-            view_name: "Synnove"
+            view_name: "Synnove Niitty"
             real_name: "Synnove"
             desc: "A plain looking girl with a faraway look in her eye."
         behaviour:
@@ -306,11 +306,11 @@ Synnove Niitty:
     Inventory:
         Slots: 20
 ---
-Farmer Manslow:
+farmer:
     Template: Character
     Entity:
         description:
-            view_name: "Manslow"
+            view_name: "Farmer Manslow"
             real_name: "Manslow"
             desc: "A grimy looking farmer."
         behaviour:
@@ -327,7 +327,7 @@ Farmer Manslow:
         Items:            
             - {ID: bushel_of_grain, type: Grain}
 ---
-Sami:
+farm_boy1:
     Template: Character
     Entity:
         description:
@@ -346,7 +346,7 @@ Sami:
     Inventory:
         Slots: 20
 ---
-Rasmus:
+farm_boy2:
     Template: Character
     Entity:
         description:

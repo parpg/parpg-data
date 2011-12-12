@@ -13,14 +13,13 @@
 #   You should have received a copy of the GNU General Public License
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
 ---
-NPC_NAME: Matti
+NPC_NAME: snowshoveler
 AVATAR_PATH: gui/portraits/snowshoveler.png
 DEFAULT_GREETING:
     ID: opening_dialog
     SAY: "Good to talk to someone, Matti could use a break"
     ACTIONS:
     -   meet:
-        - matti
     RESPONSES:
     -   REPLY: "You are some kind of psycho-killer, aren't you?"
         CONDITION: "quest['fedex'].getValue('accused_of_murder') == 'matti'"

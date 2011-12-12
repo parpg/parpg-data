@@ -13,14 +13,13 @@
 #   You should have received a copy of the GNU General Public License
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
 ---
-NPC_NAME: Dig
+NPC_NAME: bouncer
 AVATAR_PATH: gui/portraits/bouncer.png
 DEFAULT_GREETING:
     ID: main_dialog
     SAY: "What do you want?  Can't you see I'm drinking here?"
     ACTIONS:
     -   meet:
-        - dig
     RESPONSES:
     -   REPLY: "I'm looking for stuff to make beer with."
         CONDITION: "quest.hasActiveQuest('beer') and not\

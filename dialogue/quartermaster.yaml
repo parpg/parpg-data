@@ -13,14 +13,13 @@
 #   You should have received a copy of the GNU General Public License
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
 ---
-NPC_NAME: Helja
+NPC_NAME: quartermaster
 AVATAR_PATH: gui/portraits/quartermaster.png
 DEFAULT_GREETING:
     ID: main_dialog
     SAY: "Hello, there!  A new addition to the labor pool, I see."
     ACTIONS:
     -   meet:
-        - helja
     RESPONSES:
     -   REPLY: "What do you do around here?"
         GOTO: expound_quartermaster

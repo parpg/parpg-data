@@ -13,14 +13,13 @@
 #   You should have received a copy of the GNU General Public License
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
 ---
-NPC_NAME: Jacob
+NPC_NAME: innkeeper
 AVATAR_PATH: gui/portraits/innkeeper.png
 DEFAULT_GREETING:
     ID: main_dialog
     SAY: "Hi there, Stranger!  Welcome to Jacob's.  How can I help you?"
     ACTIONS:
     -   meet:
-        - jacob
     RESPONSES:
     -   REPLY: "I'd like a drink."
         GOTO: buy_drink

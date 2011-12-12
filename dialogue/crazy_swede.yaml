@@ -13,14 +13,13 @@
 #   You should have received a copy of the GNU General Public License
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
 ---
-NPC_NAME: Skwisgaar the Crazy Swede
+NPC_NAME: crazy_swede
 AVATAR_PATH: gui/portraits/crazy_swede.png
 DEFAULT_GREETING:
     ID: main_dialog
     SAY: "Chop!  Chop!  Chopity Chop-chop?"
     ACTIONS:
     -   meet:
-        - skwisgaar
     RESPONSES:
     -   REPLY: "Chop-chop.  Chop-choppy, choppy chop."
         GOTO: a1

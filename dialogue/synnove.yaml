@@ -13,18 +13,18 @@
 #   You should have received a copy of the GNU General Public License
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
 ---
-NPC_NAME: Synnove Niitty
+NPC_NAME: synnove
 AVATAR_PATH: gui/portraits/synnove.png
 DEFAULT_GREETING:
     ID: main_dialog
     SAY: "Hi there!  I don't recognize you.  Are you new here?"
     RESPONSES:
     -   REPLY: "Yes, I am new.  And who are you?"
-        CONDITION: "not met('synnove')"
+        CONDITION: "not met('npc.general.identifier')"
         GOTO: meeting
         
     -   REPLY: "You don't remember me?  We just talked!"
-        CONDITION: "met('synnove')"
+        CONDITION: "met('npc.general.identifier')"
         GOTO: future_meetings
         
     -   REPLY: "I'm looking for stuff to make beer with "
@@ -51,7 +51,6 @@ SECTIONS:
     SAY: "My name's Synnove.  I live here."
     ACTIONS:
     -   meet:
-        - synnove
     RESPONSES:
     -   REPLY: "Good to meet you.  What do you do around here."
         GOTO: synnove_job

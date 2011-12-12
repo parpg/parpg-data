@@ -13,14 +13,13 @@
 #   You should have received a copy of the GNU General Public License
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
 ---
-NPC_NAME: Farmer Manslow
+NPC_NAME: farmer
 AVATAR_PATH: gui/portraits/farmer.png
 DEFAULT_GREETING:
     ID: main_dialog
     SAY: "Who the hell are you??"
     ACTIONS:
     -   meet:
-        - manslow
     RESPONSES:
     -   REPLY: "I'm looking for stuff to make beer with "
         CONDITION: "quest.hasActiveQuest('beer') and\

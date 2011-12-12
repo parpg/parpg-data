@@ -13,14 +13,13 @@
 #   You should have received a copy of the GNU General Public License
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
 ---
-NPC_NAME: Camilla Niitty
+NPC_NAME: camilla
 AVATAR_PATH: gui/portraits/camilla.png
 DEFAULT_GREETING:
     ID: main_dialog
     SAY: "Oh, another vagabond.  What do you want?"
     ACTIONS:
     -   meet:
-        - camilla
     RESPONSES:
     -   REPLY: "I'm looking for stuff to make beer with "
         CONDITION: "quest.hasActiveQuest('beer') and not\

@@ -13,27 +13,27 @@
 #   You should have received a copy of the GNU General Public License
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
 ---
-NPC_NAME: Bart The Drunkard
+NPC_NAME: drunkard
 AVATAR_PATH: gui/portraits/drunkard.png
 DEFAULT_GREETING:
     ID: main_dialog
     SAY: "Hey there, back up... no need to gang up on a poor guy!"
     RESPONSES:
     -   REPLY: "Gang up?  There's only one of me!"
-        CONDITION: "not met('bart')"
+        CONDITION: "not met('npc.general.identifier')"
         GOTO: first_impression
         
     -   REPLY: "Glad to see you're feeling better."
-        CONDITION: "met('bart') and quest.hasFinishedQuest('beer')"
+        CONDITION: "met('npc.general.identifier') and quest.hasFinishedQuest('beer')"
         GOTO: gratitude
         
     -   REPLY: "Same old Bart,  I see."
-        CONDITION: "met('bart') and not\
+        CONDITION: "met('npc.general.identifier') and not\
            \ quest['fedex'].isGoalValue('accused_of_murder')"
         GOTO: old_pals
         
     -   REPLY: "See you later, Killer."
-        CONDITION: "met('bart') and\
+        CONDITION: "met('npc.general.identifier') and\
            \ quest['fedex'].isGoalValue('accused_of_murder')"
         GOTO: end
         
@@ -46,7 +46,6 @@ SECTIONS:
        \ Name's Bart."
     ACTIONS:
     -   meet:
-        - bart
     RESPONSES:
     -   REPLY: "Are you drunk?"
         CONDITION: "not quest.hasActiveQuest('beer') and not\

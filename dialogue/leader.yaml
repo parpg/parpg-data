@@ -13,14 +13,13 @@
 #   You should have received a copy of the GNU General Public License
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
 ---
-NPC_NAME: Kimmo Niitty
+NPC_NAME: leader
 AVATAR_PATH: gui/portraits/leader.png
 DEFAULT_GREETING:
     ID: main_dialog
     SAY: "What do you want?"
     ACTIONS:
     -   meet:
-        - kimmo
     RESPONSES:
     -   REPLY: "Nice office you have here."
         GOTO: feedback_office
@@ -144,15 +143,15 @@ SECTIONS:
         GOTO: explain_pekko
         
     -   REPLY: "Tell me about Jacob."
-        CONDITION: "met('jacob')"
+        CONDITION: "met('innkeeper')"
         GOTO: explain_jacob
         
     -   REPLY: "Tell me about Janie."
-        CONDITION: "met('janie')"
+        CONDITION: "met('fguard')"
         GOTO: explain_janie
         
     -   REPLY: "Tell me about Bart."
-        CONDITION: "met('bart')"
+        CONDITION: "met('drunkard')"
         GOTO: explain_bart
         
     -   REPLY: "Tell me about your mother,  Aino."
@@ -160,7 +159,7 @@ SECTIONS:
         GOTO: explain_ma
         
     -   REPLY: "Tell me about Helja."
-        CONDITION: "met('helja')"
+        CONDITION: "met('quartermaster')"
         GOTO: explain_helja
         
     -   REPLY: "Tell me about Matti."
@@ -168,7 +167,7 @@ SECTIONS:
         GOTO: explain_matti
         
     -   REPLY: "Tell me about Skwisgaar."
-        CONDITION: "met('skwisgaar')"
+        CONDITION: "met('crazy_swede')"
         GOTO: explain_skwisgaar
         
     -   REPLY: "Anyone else I should know about?"

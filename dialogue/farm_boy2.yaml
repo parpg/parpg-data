@@ -13,7 +13,7 @@
 #   You should have received a copy of the GNU General Public License
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
 ---
-NPC_NAME: Rasmus
+NPC_NAME: farm_boy2
 AVATAR_PATH: gui/portraits/farm_boy_temp.png
 DEFAULT_GREETING:
     ID: main_dialog
