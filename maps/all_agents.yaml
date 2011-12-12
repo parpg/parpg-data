@@ -365,7 +365,7 @@ farm_boy2:
     Inventory:
         Slots: 20
 ---
-Bottle:
+bottle:
     Template: "Empty beer bottle"
     Entity:
         description:
@@ -374,7 +374,7 @@ Bottle:
     Position: [-5.0, -11.0]
     Rotation: 0
 ---
-Potato:
+potato:
     Template: "Wild potato"
     Entity:
         description:
@@ -383,7 +383,7 @@ Potato:
     Position: [7.0, -16.0]
     Rotation: 0
 ---
-Yam:
+yam:
     Template: "Rotten yam"
     Entity:
         description:
@@ -392,7 +392,7 @@ Yam:
     Position: [-4.0, 0.0]
     Rotation: 0
 ---
-Wood:
+wood:
     Template: "Wood"
     Entity:
         description:
@@ -401,7 +401,7 @@ Wood:
     Position: [10.0, 8.0]
     Rotation: 0
 ---
-Questionable Water:
+questionable_water:
     Template: "Questionable water"
     Entity:
         description:
@@ -410,7 +410,7 @@ Questionable Water:
     Position: [9.0, -33.0]
     Rotation: 0
 ---
-Pure Water:
+pure_water:
     Template: "Pure water"
     Entity:
         description:

@@ -13,7 +13,7 @@
 #   You should have received a copy of the GNU General Public License
 #   along with PARPG.  If not, see <http://www.gnu.org/licenses/>.
 ---
-DirtyOldCrate:
+dirty_old_crate:
     Template: "WoodenCrate"
     Entity:
         description:
@@ -29,7 +29,7 @@ DirtyOldCrate:
         Items:
             - {ID: "Small pocket knife", type: "Small pocket knife"}
 ---
-ToFarm:
+to_farm:
     Template: "ShantyDoor"
     Entity:
         description:
@@ -42,7 +42,7 @@ ToFarm:
     Rotation: 0
     
 ---
-Footlocker:
+footlocker:
     Template: "Footlocker"
     Entity:
         description:
