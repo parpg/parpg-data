@@ -1,5 +1,6 @@
 Scripts:
     fguard_greet:
+        - [Say, 'fguard, "You there."', 0]
         - [Talk, fguard, 0, approach, 'fguard.fifeagent, PlayerCharacter.fifeagent.behaviour.agent']
 Conditions:
     - ["not met('fguard')", "fguard_greet"]
